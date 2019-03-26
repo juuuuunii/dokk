@@ -1,0 +1,27 @@
+.farm {margin-bottom: 6rem;}
+.farm > h3 {color: #079360; font-weight: 600; margin: 3rem 0 1rem;}
+.farm > h3 > img {width: 5%;}
+.farm_info {margin-bottom: 2rem;}
+
+
+/* 계좌입력 */
+.my_farm {margin-bottom: 4rem;}
+.my_harv {margin-bottom: 2rem;}
+.my_harv > div {float: left;}
+.my_harv > div > span {color: #437f5b; font-size: 16px; font-weight: 600;}
+.my_harv > .harv_img {width: 70px;}
+.my_harv > .harv_txt {margin: 25px 0 0 15px; font-size: 13px;}
+
+.acount > ul {float: left;}
+.acount_txt {width: auto; margin-right: 2rem;}
+.acount_txt > li, .acount_write > li {margin: 10px 0; height: 61px;}
+.acount_txt > li > p {background: #d3efe0; padding: .5rem 1rem;}
+.bo_w_tit input {padding: .5rem; font-size: 12px; border: 0; border-bottom: 1px solid #ccc; outline: none;}
+.bo_w_tit span {display: block; color: #437f5b; font-size: 12px; font-weight: 600; margin-top: 5px;}
+
+.btn_confirm > input {border: 0; background: #437f5b; color: #fff; font-size: 16px; font-weight: 600; padding: .5rem 1rem; outline: none; cursor: pointer;}
+.btn_confirm > input:hover {animation-name: confAni; animation-duration: 0.5s; animation-fill-mode: forwards; animation-timing-function: ease-out;}
+@keyframes confAni {
+    0% {background: #437f5b; color: #fff;}
+    100% {background: #f1f1f1; color: #437f5b;}
+}

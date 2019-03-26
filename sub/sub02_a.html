@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>수족관 확인하기</title>
+    <!-- css -->
+    
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/dokk_basic.css">
+    <link rel="stylesheet" href="../css/dokk_sub02_a.css">
+    <link rel="stylesheet" href="../css/swiper.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- w3 -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- chart -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>	
+</head>
+<body>
+    <!-- header -->
+    <header class="clear">
+        <!-- head_top -->
+        <div class="head_top clear">
+            <div class="wrap">
+                <ul class="prim clear">
+                    <li><a href=""><img src="../img/common/farm_logo_01.png" class="img farm_logo" alt="farm_logo"/></a></li>
+                    <li><a href=""><img src="../img/common/aqua_logo_01.png" class="img aqua_logo" alt="aqua_logo"/></a></li>
+                </ul>
+                <ul class="clear">
+                    <li class="cursor">1:1문의</li>
+                    <li class="cursor">개인결제</li>
+                    <li class="cursor">마이페이지</li>
+                    <li class="cursor">쿠폰존</li>
+                </ul>
+            </div>
+        </div>
+        <!-- logo & sign -->
+        <div class="wrap">
+            <div class="haed_main">
+                <div class="logos cursor">
+                    <img src="../img/common/dm_logo_01.png" class="img logo" alt="logo"/>
+                </div>
+                <ul class="searchs">
+                    <li>
+                        <input type="text" class="w3-input" name="search" placeholder="Search for products">
+                    </li>
+                    <li class="cursor">
+                        <span class="fa fa-search"></span>
+                    </li>
+                </ul>
+                <ul class="logins">
+                    <li class="cursor">
+                        <span class="fa fa-shopping-basket"></span>
+                        <span class="w3-badge">0</span>
+                    </li>
+                    <li class="cursor">SIGN UP</li>
+                    <li>|</li>
+                    <li class="cursor">SIGN IN</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <!-- top_navs -->
+    <section class="navs">
+        <div class="wrap clear">
+            <ul class="menu">
+                <li>
+                    <span class="cursor menu_tit">추천상품</span>
+                    <span class="arrow_down">∨</span>
+                    <ul class="sub_menu">
+                        <li>
+                            뷰티
+                            <ul>
+                                <li>
+                                    <a href="http://dokk.kr/shop/item.php?it_id=1546788875">마유 마스크팩</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            패션
+                            <ul>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1547898341">더블 지퍼 이너백 여행가방</a></li>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1547897567">터치 니트 장갑</a></li>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1547899082">겨울철 실내화</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            악세사리
+                            <ul>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1546843287">스마트폰 차량용 거치대</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            디지털제품
+                            <ul>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1547899458">USB 무드등 미니가습기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            컨텐츠
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="cursor menu_tit">최신상품</span>
+                    <span class="arrow_down">∨</span>
+                    <ul class="sub_menu">
+                        <li>
+                            뷰티
+                            <ul>
+                                <li>
+                                    <a href="http://dokk.kr/shop/item.php?it_id=1546788875" >마유 마스크팩</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            패션
+                            <ul>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1547898341">더블 지퍼 이너백 여행가방</a></li>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1547897567">터치 니트 장갑</a></li>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1547899082">겨울철 실내화</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            악세사리
+                            <ul>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1546843287">스마트폰 차량용 거치대</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            디지털제품
+                            <ul>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1547899458">USB 무드등 미니가습기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            컨텐츠
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="cursor menu_tit">인기상품</span>
+                    <span class="arrow_down">∨</span>
+                    <ul class="sub_menu">
+                        <li>
+                            뷰티
+                            <ul>
+                                <li>
+                                    <a href="http://dokk.kr/shop/item.php?it_id=1546788875">마유 마스크팩</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            패션
+                            <ul>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1547898341">더블 지퍼 이너백 여행가방</a></li>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1547897567">터치 니트 장갑</a></li>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1547899082">겨울철 실내화</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            악세사리
+                            <ul>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1546843287">스마트폰 차량용 거치대</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            디지털제품
+                            <ul>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1547899458">USB 무드등 미니가습기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            컨텐츠
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="cursor menu_tit">할인상품</span>
+                    <span class="arrow_down">∨</span>
+                    <ul class="sub_menu">
+                        <li>
+                            뷰티
+                            <ul>
+                                <li>
+                                    <a href="http://dokk.kr/shop/item.php?it_id=1546788875">마유 마스크팩</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            패션
+                            <ul>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1547898341">더블 지퍼 이너백 여행가방</a></li>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1547897567">터치 니트 장갑</a></li>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1547899082">겨울철 실내화</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            악세사리
+                            <ul>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1546843287">스마트폰 차량용 거치대</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            디지털제품
+                            <ul>
+                                <li><a href="http://dokk.kr/shop/item.php?it_id=1547899458">USB 무드등 미니가습기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            컨텐츠
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="etc">
+                <li class="cursor">개인결제</li>
+                <li>|</li>
+                <li class="cursor">1:1문의</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- side_nav -->
+    <section class="banners clear">
+        <div class="gnbs">
+            <nav id="gnb">
+                    <button type="button" id="menu_open" class="cursor"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                    <ul id="gnb_1dul">
+                        <li class="gnb_1dli" style="z-index:998">
+                            <a href="http://dokk.kr/shop/list.php?ca_id=20" class="gnb_1da gnb_1dam">
+                                <img src="../img/cate/side/beauty.png" class="img" alt="beauty"/>
+                            </a>
+                            <ul class="gnb_2dul" style="z-index:998">                
+                                <li class="gnb_2dli"><a href="http://dokk.kr/shop/list.php?ca_id=2010" class="gnb_2da">마스크팩</a></li>
+                            </ul>        
+                        </li>
+                        <li class="gnb_1dli" style="z-index:997">
+                            <a href="http://dokk.kr/shop/list.php?ca_id=30" class="gnb_1da gnb_1dam"><img src="../img/cate//side/fashion.png" class="img" alt="fashion"/></a>
+                            <ul class="gnb_2dul" style="z-index:997">               
+                                <li class="gnb_2dlgnb_2dai"><a href="http://dokk.kr/shop/list.php?ca_id=3010" class="gnb_2da">가방</a></li>
+                                <li class="gnb_2dli"><a href="http://dokk.kr/shop/list.php?ca_id=3020" class="gnb_2da">장갑</a></li>
+                                <li class="gnb_2dli"><a href="http://dokk.kr/shop/list.php?ca_id=3030" class="gnb_2da">신발</a></li>
+                            </ul>        
+                        </li>
+                        <li class="gnb_1dli" style="z-index:996">
+                            <a href="http://dokk.kr/shop/list.php?ca_id=40" class="gnb_1da gnb_1dam"><img src="../img/cate/side//acc.png" class="img" alt="acc"/></a>
+                            <ul class="gnb_2dul" style="z-index:996">                
+                                <li class="gnb_2dli"><a href="http://dokk.kr/shop/list.php?ca_id=4010" class="gnb_2da">스마트폰 거치대</a></li>
+                            </ul>       
+                        </li>
+                        <li class="gnb_1dli" style="z-index:995">
+                            <a href="http://dokk.kr/shop/list.php?ca_id=50" class="gnb_1da gnb_1dam"><img src="../img/cate/side//digi.png" class="img" alt="digital"/></a>
+                            <ul class="gnb_2dul" style="z-index:995">                
+                                <li class="gnb_2dli"><a href="http://dokk.kr/shop/list.php?ca_id=5010" class="gnb_2da">가습기/제습기</a></li>
+                            </ul>        
+                        </li>
+                        <li class="gnb_1dli" style="z-index:994">
+                            <a href="http://dokk.kr/shop/list.php?ca_id=10" class="gnb_1da"><img src="../img/cate/side//cont.png" class="img" alt="content"/></a>
+                                    
+                        </li>
+                    </ul>
+            </nav>
+        </div>
+        <div id="category">
+            <button type="button" class="close_btn cursor">
+                <i class="fa fa-times" aria-hidden="true"></i>
+                <span>전체 카테고리</span>
+            </button>
+            <div class="ct_wr">
+                <ul class="cate clear">
+                    <li class="cate_li_1">
+                        <a href="http://dokk.kr/shop/list.php?ca_id=20" class="cate_li_1_a">뷰티</a>
+                        <ul class="sub_cate sub_cate1">
+                            <li class="cate_li_2">
+                                <a href="http://dokk.kr/shop/list.php?ca_id=2010">마스크팩</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cate_li_1">
+                        <a href="http://dokk.kr/shop/list.php?ca_id=30" class="cate_li_1_a">패션</a>
+                        <ul class="sub_cate sub_cate1">
+                            <li class="cate_li_2">
+                                <a href="http://dokk.kr/shop/list.php?ca_id=3010">가방</a>
+                            </li>
+                            <li class="cate_li_2">
+                                <a href="http://dokk.kr/shop/list.php?ca_id=3020">장갑</a>
+                            </li>
+                            <li class="cate_li_2">
+                                <a href="http://dokk.kr/shop/list.php?ca_id=3030">신발</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cate_li_1">
+                        <a href="http://dokk.kr/shop/list.php?ca_id=40" class="cate_li_1_a">악세사리</a>
+                        <ul class="sub_cate sub_cate1">
+                            <li class="cate_li_2">
+                                <a href="http://dokk.kr/shop/list.php?ca_id=4010">스마트폰 거치대</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cate_li_1">
+                        <a href="http://dokk.kr/shop/list.php?ca_id=50" class="cate_li_1_a">디지털제품</a>
+                        <ul class="sub_cate sub_cate1">
+                            <li class="cate_li_2">
+                                <a href="http://dokk.kr/shop/list.php?ca_id=5010">가습기/제습기</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cate_li_1">
+                        <a href="http://dokk.kr/shop/list.php?ca_id=10" class="cate_li_1_a">컨텐츠</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <!-- 내역확인 시작 -->
+    <section class="farm wrap">
+
+        <h3>
+            <img src="../img/sub/aqua.png" class="img" alt="aqua"/>
+            네모 수족관
+        </h3>
+        <div class="farm_info">
+            <img src="../img/sub/notice_02_a.jpg" class="img" alt="farm_info"/>
+        </div>
+        
+         <!-- 나무 내역 -->
+        <ul class="my_farm clear">
+           <div>
+
+                <table valign="top">
+                        <colgroup>
+                            <col width="50" />
+                            <col width="50" />
+                            <col width="200" />
+                            <col width="70" />
+                            <col width="70" />
+                            <col width="40" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col"><div>마리</div></th>
+                                <th scope="col"><div>나의 수족관</div></th>
+                                <th scope="col"><div>물고기(원)</div></th>
+                                <th scope="col"><div>수확여부</div></th>
+                                <th scope="col"><div>수확가능여부</div></th>
+                                <th scope="col"><div>&nbsp;</div></th>
+                            </tr>
+                        </thead>
+                        <today>
+                            <tr>
+                                <td><span>1</span>마리</td>
+                                <td><img src="../img/sub/fish.png" class="img" alt="my_fish"/></td>
+                                <td class="td_left">
+                                    <p><span>0</span> 열매</p>
+                                    <p>(현재: <span>0</span>원)</p>
+                                </td>
+                                <td><span>0</span> 수확</td>
+                                <td><span>수확불가</span></td>
+                                <td>정상</td>
+                            </tr>
+                             <tr>
+                                 <td><span>2</span>마리</td>
+                                <td><img src="../img/sub/fish.png" class="img" alt="my_fish"/></td>
+                                <td class="td_left">
+                                    <p><span>0</span> 열매</p>
+                                    <p>(현재: <span>0</span>원)</p>
+                                </td>
+                                <td><span>0</span> 수확</td>
+                                <td><span>수확불가</span></td>
+                                <td>정상</td>
+                            </tr>
+                            <tr>
+                                <td><span>3</span>마리</td>
+                                <td><img src="../img/sub/fish.png" class="img" alt="my_fish"/></td>
+                                <td class="td_left">
+                                    <p><span>0</span> 열매</p>
+                                    <p>(현재: <span>0</span>원)</p>
+                                </td>
+                                <td><span>0</span> 수확</td>
+                                <td><span>수확불가</span></td>
+                                <td>정상</td>
+                            </tr>
+                             <tr>
+                                 <td><span>4</span>마리</td>
+                                <td><img src="../img/sub/fish.png" class="img" alt="my_fish"/></td>
+                                <td class="td_left">
+                                    <p><span>0</span> 열매</p>
+                                    <p>(현재: <span>0</span>원)</p>
+                                </td>
+                                <td><span>0</span> 수확</td>
+                                <td><span>수확불가</span></td>
+                                <td>정상</td>
+                            </tr>
+                            <tr>
+                                <td><span>5</span>마리</td>
+                                <td><img src="../img/sub/fish.png" class="img" alt="my_fish"/></td>
+                                <td class="td_left">
+                                    <p><span>0</span> 열매</p>
+                                    <p>(현재: <span>0</span>원)</p>
+                                </td>
+                                <td><span>0</span> 수확</td>
+                                <td><span>수확불가</span></td>
+                                <td>정상</td>
+                            </tr>
+                        </today>
+                    </table>
+            </div>
+        </ul>
+        
+       
+    </section>
+    <!-- 내역확인 끝 -->
+
+
+    <!-- footer -->
+    <footer class="wrap clear">
+        <ul class="foot_top clear">
+            <h4>고객센터</h4>
+            <li>
+                <p>전화문의(02-6952-8172)</p>
+                <p><strong>평일</strong> 월-금 am 09:00 - pm 06:00</p>
+                <p><strong>점심시간</strong> am 12:00 - pm 01:00</p>
+            </li>
+            <li>
+                <p class="cursor">1:1 문의 <span class="fa fa-angle-right"></span></p>
+                <p>궁금한 점이 있으신가요?</p>
+                <p>1:1 문의에 남겨주시면 친절히 상담해 드리겠습니다.</p>
+            </li>
+        </ul>
+        <ul class="foot_mid clear">
+            <li class="cursor">도깨비방망이 소개</li>
+            <li class="cursor">이용안내</li>
+            <li class="cursor">서비스이용약관</li>
+            <li class="cursor">개인정보처리방침</li>
+            <li class="cursor">모바일버전</li>
+        </ul>
+        <ul class="foot_bott clear">
+            <li class="foot_txt">
+                <ul>
+                    <li>회사명:</li>
+                    <li>대표자(성명):</li>
+                    <li>개인정보보호책임자:</li>
+                    <li>통신판배업자신고번호:</li>
+                    <li>부가통신사업신고번호:</li>
+                </ul>
+                <ul>
+                    <li>주식회사 도깨비방망이</li>
+                    <li>김영수 대표</li>
+                    <li>강종민</li>
+                    <li>제 2019-서울강남</li>
+                    <li>00084호</li>
+                </ul>
+            </li>
+            <li class="foot_info">
+                <ul>
+                    <li>팩스:</li>
+                    <li>전화:</li>
+                    <li>주소:</li>
+                </ul>
+                <ul>
+                    <li>070-4866-0993</li>
+                    <li>02-6952-8172</li>
+                    <li>서울시 강남구 강남대로94길 70 3층</li>
+                </ul>
+            </li>
+            <li class="foot_copy">
+                <div class="foot_logo cursor">
+                    <img src="../img/common/dm_logo_01.png" class="img foot_logo" alt="foot_logo"/>
+                </div>
+                <p>
+                    <span>Copyright © 2001-2013 주식회사 도깨비방망이.</span></p>
+                    <span>All Rights Reserved.</span>.</p>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="../js/swiper.js"></script>
+    <script src="../js/dokk_basic.js"></script>
+    <script src="../js/dokk_sub01.js"></script>
+    
+</body>
+</html>

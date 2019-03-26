@@ -1,0 +1,119 @@
+
+/** product list **/
+.sec_wrap {margin: 70px 0;}
+.sec_wrap > div {display: inline-block;}
+.sec_left {width: 20%;}
+.sec_left > .sec_tit {position: relative;}
+.sec_left > .sec_tit h2:after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 1px;
+    background-color: #666;
+    margin: 30px 0 15px;
+}
+.sec_right {width: 77%; float: right;}
+.sec_right .sct > li {width: 30%; height: 400px; float: left; padding: 10px 20px; border: 1px solid #e8e8e8; margin-left: 3%; margin-bottom: 3%;}
+.sct_txt h4 {margin: 15px 0 !important; font-size: 15px; font-weight: 600 !important;}
+.sct_txt p {font-size: 12px; color: #888;}
+.sct_txt h6 {font-size: 15px; color: #c40000; font-weight: 600 !important; margin-top: 5px !important;}
+
+
+/*** banner ***/
+#banner {width: 100%; height: 500px;}
+#banner > .swiper-container {width: 100%; height: 100%;}
+#banner > .swiper-container > .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 60%;
+}
+.ban_wrap {width: 100%; position: relative;}
+.ban_wrap > div > li {width: 1140px; height: 500px;}
+.ban_wrap > div > li > img {width: 100%; height: 600px;}
+#banner > .swiper-container > .angle > .fa {font-size: 30px; width: 30px; height: 30px; border-radius: 50px; text-align: center;}
+#banner > .swiper-container > .angle > .fa:hover {animation-name: angAni; animation-duration: 0.5s; animation-fill-mode: forwards; animation-timing-function: ease-out;}
+@keyframes angAni {
+    0% {background-color: none;}
+    100% { background-color: rgba(255, 255, 255, 0.7);}
+}
+  
+#banner > .swiper-container > .swiper-button-next {right: 29% !important;}
+#banner > .swiper-container > .swiper-button-prev {left: 29.5% !important;}
+
+/*** sub-banner ***/
+#sub-banner img {height: 150px;}
+
+/*** tomo ***/
+#tomo {width: 100%; height: 650px; background: url("../img/tomolife/tomolife_ban.jpg") center no-repeat; background-size: cover;}
+.tomo_wrap {width: 60%; float: right; padding-top: 70px;}
+.tomo_wrap .tomo_title {font-size: 22px; font-weight: 600 !important; color: #555555; margin-bottom: 30px;}
+.tomo_wrap .tomo_title > img {max-width: 200px; display: block; margin-top: 10px;}
+.tomo_wrap > h5 {font-weight: 500 !important; color: #555555; margin-bottom: 30px !important;}
+.tomo_wrap > h5 > span {display: block; font-size: 20px; letter-spacing: 1px;}
+.give {font-family: 'Oswald'; font-style: bold; font-size: 30px !important; font-weight: 600 !important; color: #6aae51; letter-spacing: -1px !important; margin-top: 10px !important;}
+.tomo_wrap .tomo_prd > li {display: inline-block; width: 220px; height: auto;}
+.tomo_wrap .tomo_prd > li .tomo_prd {max-width: 200px;}
+.tomo_wrap .tomo_prd > li .tomo_plus {max-width: 20px; margin-left: 20px;}
+
+/*** best ***/
+.tab_nav {float: right; margin-bottom: 30px;}
+.tab_nav > li {display:inline-block; margin-right: 10px;}
+.tab_contents > ul > li {background: #fff;} 
+
+/*** new ***/
+.new_wrap > li {width: 30%; float: left; margin: 1.5%; border: 1px solid #e8e8e8;}
+
+/*** thumbnail ***/
+#thumbnail {margin: 70px 0;}
+.thum_wrap > li {width: 48%; height: auto; float: left; margin-right: 3%; margin-bottom: 3%;}
+.thum_wrap > li:nth-child(2), .thum_wrap > li:nth-child(4) {margin-right: 0;}
+.thum_txt {margin: 15px 0 0 20px;}
+.thum_txt h4 {font-size: 18px; font-weight: 600 !important;}
+
+/*** majang ***/
+#majang {width: 100%; height: 680px; background: url("../img/majang/majang_ban.jpg") center no-repeat; background-size: cover; margin: 70px 0; position: relative;} 
+#majang > h3 {text-align: center; padding: 50px 0 !important}
+#majang > .swiper-container {
+    width: 100%;
+    overflow-y: hidden !important;
+
+}
+#majang > .swiper-container .swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 400px !important;
+    padding: 20px;
+}
+#majang > .swiper-pagination {left: 50%; bottom: 10%; transform: translate(-50%, -10%);}
+#majang > .swiper-pagination > span {margin: 0 5px !important;}
+#majang > .swiper-pagination > .swiper-pagination-bullet-active {background: #c40000;}
+#majang > .angle > .fa {font-size: 40px;}
+#majang > .swiper-button-next {right: 25% !important;}
+#majang > .swiper-button-prev {left: 25% !important;}

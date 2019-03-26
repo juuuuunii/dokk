@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>네모 수족관</title>
+    <!-- css -->
+    
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/dokk_basic.css">
+    <link rel="stylesheet" href="../css/dokk_sub01_a.css">
+    <link rel="stylesheet" href="../css/swiper.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- w3 -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- chart -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>	
+</head>
+<body>
+    <!-- header -->
+    <header id="basic">
+        <div class="top-bar">
+            <div class="wrap clear">
+                <ul class="topbar-left clear">
+                    <li><a href="/mypage_v1.php">
+                        <img src="../img/common/farm_logo_01.png" class="farm_logo img" alt="farm_logo"/>
+                    </a></li>
+                    <li><a href="/mypage_v2.php">
+                        <img src="../img/common/aqua_logo_01.png" class="aqua_logo img" alt="aqua_logo"/>
+                    </a></li>
+                </ul>
+                <ul class="topbar-right clear">
+                    <li><a href="http://dokk.kr/shop/personalpay.php">개인결제</a></li>
+                    <li><a href="http://dokk.kr/bbs/qalist.php">1:1문의</a></li>
+                    <li><a href="http://dokk.kr/bbs/faq.php">자주하는 질문</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="top-title">
+            <ul class="wrap clear">
+                <li class="logos">
+                    <a href="http://dokk.kr/shop/">
+                        <img src="../img/common/dm_logo_01.png" class="img logo" alt="farm_logo"/>
+                    </a>
+                </li>
+                <li class="searchs">
+                    <form name="frmsearch1" action="/shop/search.php" onsubmit="return search_submit(this);">
+                        <input type="text" name="q" value="" id="sch_str" required>
+                        <button type="submit" id="sch_submit"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only"></span></button>
+                    </form>
+                    <script>
+                        function search_submit(f) {
+                            if (f.q.value.length < 2) {
+                                alert("검색어는 두글자 이상 입력하십시오.");
+                                f.q.select();
+                                f.q.focus();
+                                return false;
+                            }
+                            return true;
+                        }
+                    </script>
+                </li>
+                <li class="logins clear">
+                    <div><a href="http://dokk.kr/bbs/login.php?url=%2Fshop%2F"><b>로그인</b></a></div>  
+					<div><a href="http://dokk.kr/bbs/register.php">회원가입</a></div>
+                    <div class="tnb_cart">
+                        <a href="/shop/cart.php">
+                            <span class="fa fa-shopping-basket"></span>
+                            <span class="w3-badge">0</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- aqua 시작 -->
+    <section class="aqua wrap">
+        <h3>
+            <img src="../img/sub_page/aqua.png" class="img" alt="aqua"/>
+            네모 수족관
+        </h3>
+        <div class="aqua_info">
+            <img src="../img/sub_page/notice_01_a.jpg" class="img" alt="aqua_info"/>
+        </div>
+
+        <!-- 나의 내역 -->
+        <ul class="my_aqua clear">
+            <li>
+                <div class="my_tit">나의 어확금</div>
+                <div class="my_wrap clear">
+                    <div class="my_coin">
+                        <strong>6,000</strong>(P)
+                    </div>
+                    <div class="my_bt">
+                        <!--내역확인-->
+                        <button onclick="window.open('http://dokk.kr/bbs/point.php')">
+                            <img src="../img/sub_page/icon05_a.png" class="img">
+                        </button>
+                        <!--환전하기-->
+                        <button onclick="location.href='/bbs/write.php?bo_table=exchange'">
+                            <img src="../img/sub_page/icon04_a.png" class="img">
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="my_tit">레벨</div>
+                 <div class="my_wrap">
+                    <div class="my_txt">
+                        <div class="outer">
+                            <div class="inner">
+                                <span>이준희님</span>
+                                 <span><b>1</b>레벨</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="my_tit">지점</div>
+                <div class="my_wrap">
+                    <div class="my_txt">
+                        <div class="outer">
+                            <div class="inner">
+                                <span>본사</span>
+                                 <span>본사 지점장</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="my_tit">나의 수족관</div>
+                <div class="my_wrap">
+                    <div class="my_coin">
+                        0수족관
+                    </div>
+                    <div class="my_bt">
+                        <a href="mypage_tree1.php">
+                            <button onclick="location.href='mypage_tree1.php'" style="border:0px;background:#fff">
+                            <img src="../img/sub_page/icon06_a.png" style="width:100px"></button>
+                        </a>
+                        <button onclick="location.href='/bbs/write.php?bo_table=add_tree1'" style="border:0px;background:#fff">
+                            <img src="../img/sub_page/icon02_a.png" style="width:100px">
+                        </button>
+                    </div>
+                        
+                </a>
+
+
+                </div>
+            </li>
+        </ul>
+
+        <!-- 공지/질문 -->
+        <div class="qa_li">
+            <ul class="qa_nav clear">
+                <li>
+                    공지사항
+                    <i class="fa fa-plus"></i>
+                </li>
+                <li>
+                    질문 & 답변
+                    <i class="fa fa-plus"></i>
+                </li>
+            </ul>
+            <div class="qa_wrap clear">
+                <div class="qas">
+                    <!-- 공지사항 -->
+                    <table style="width:49%; margin-right: 2%;" valign="top">
+                        <colgroup>
+                            <col width="30" />
+                            <col width="200" />
+                            <col width="30" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col"><div>&nbsp;</div></th>
+                                <th scope="col"><div>제목</div></th>
+                                <th scope="col"><div>작성일</div></th>
+                            </tr>
+                        </thead>
+                        <today>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td class="td_left">2월 28일 네모 수족관 출금 신청안내</td>
+                                <td><span class="dl_date">14:35</span></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td class="td_left">2월 25일 도깨비 과수원 출금 신청안내</td>
+                                <td><span class="dl_date">09:51</span></td>
+                            </tr>
+                        </today>
+                    </table>
+                    <!-- 질문답변 -->
+                    <table  style="width:49%;" valign="top">
+                        <colgroup>
+                            <col width="30" />
+                            <col width="200" />
+                            <col width="30" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col"><div>&nbsp;</div></th>
+                                <th scope="col"><div>제목</div></th>
+                                <th scope="col"><div>작성일</div></th>
+                            </tr>
+                        </thead>
+                        
+                        <today>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td class="td_left">2월 28일 네모 수족관 출금 신청안내</td>
+                                <td><span class="dl_date">14:35</span></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td class="td_left">2월 25일 도깨비 과수원 출금 신청안내</td>
+                                <td><span class="dl_date">09:51</span></td>
+                            </tr>
+                        </today>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </section>
+    <!-- aqua 끝 -->
+
+
+    <!-- footer -->
+    <footer class="wrap clear">
+        <ul class="foot_top clear">
+            <h4>고객센터</h4>
+            <li>
+                <p>전화문의(02-6952-8172)</p>
+                <p><strong>평일</strong> 월-금 am 09:00 - pm 06:00</p>
+                <p><strong>점심시간</strong> am 12:00 - pm 01:00</p>
+            </li>
+            <li>
+                <p class="cursor">1:1 문의 <span class="fa fa-angle-right"></span></p>
+                <p>궁금한 점이 있으신가요?</p>
+                <p>1:1 문의에 남겨주시면 친절히 상담해 드리겠습니다.</p>
+            </li>
+        </ul>
+        <ul class="foot_mid clear">
+            <li class="cursor">도깨비방망이 소개</li>
+            <li class="cursor">이용안내</li>
+            <li class="cursor">서비스이용약관</li>
+            <li class="cursor">개인정보처리방침</li>
+            <li class="cursor">모바일버전</li>
+        </ul>
+        <ul class="foot_bott clear">
+            <li class="foot_txt">
+                <ul>
+                    <li>회사명:</li>
+                    <li>대표자(성명):</li>
+                    <li>개인정보보호책임자:</li>
+                    <li>통신판배업자신고번호:</li>
+                    <li>부가통신사업신고번호:</li>
+                </ul>
+                <ul>
+                    <li>주식회사 도깨비방망이</li>
+                    <li>김영수 대표</li>
+                    <li>강종민</li>
+                    <li>제 2019-서울강남</li>
+                    <li>00084호</li>
+                </ul>
+            </li>
+            <li class="foot_info">
+                <ul>
+                    <li>팩스:</li>
+                    <li>전화:</li>
+                    <li>주소:</li>
+                </ul>
+                <ul>
+                    <li>070-4866-0993</li>
+                    <li>02-6952-8172</li>
+                    <li>서울시 강남구 강남대로94길 70 3층</li>
+                </ul>
+            </li>
+            <li class="foot_copy">
+                <div class="foot_logo cursor">
+                    <img src="../img/common/dokk_logo.png" class="img foot_logo" alt="foot_logo"/>
+                </div>
+                <p>
+                    <span>Copyright © 2001-2013 주식회사 도깨비방망이.</span></p>
+                    <span>All Rights Reserved.</span>.</p>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="../js/swiper.js"></script>
+    <script src="../js/dokk_basic.js"></script>
+    <script src="../js/dokk_sub01.js"></script>
+    
+</body>
+</html>

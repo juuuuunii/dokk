@@ -1,0 +1,59 @@
+/** aqua **/
+.topbar-left > :nth-child(1) {border: 1px solid #079360; color: #232323;}         
+
+
+.farm {margin-bottom: 6rem;}
+.farm > h3 {color: #079360; font-weight: 600 !important; margin: 3rem 0 2rem !important;}
+.farm > h3 > img {width: 5%; margin-right: 1rem;}
+.farm_info {margin-bottom: 2rem;}
+
+
+/* 나의 내역 */
+.my_farm {margin-bottom: 4rem;}
+.my_farm > li {width: 24%; float: left; margin-right: 1%; border: 1px solid #f1f1f1;}
+.my_tit {border-bottom: 1px solid #f1f1f1; text-align: center; padding: 1rem 0; font-weight: 600 !important;}
+.my_wrap {padding: 1rem 2rem; width: 100%; height: 150px;}
+.my_coin {text-align: center; margin: 2rem 0;}
+.my_bt > button, .my_bt > a {width: 50%; float: left; cursor: pointer;}
+
+.my_txt {width: 100%; height: 100%;}
+.my_txt > .outer {width: 100%; height: 100%; display: table; text-align: center;}
+.outer > .inner {width: 100%; height: 100%; display: table-cell; vertical-align: middle;}
+.outer > .inner > span {display: block; margin-bottom: .5rem;}
+
+/* 공지/질문 */
+.qa_li {padding-bottom: 4rem;}
+.qa_nav > li {
+    width: 49%; 
+    float: left; 
+    text-align: center; 
+    border: 1px solid #f1f1f1;
+    padding: 1rem 0;
+    color: #888;
+    font-size: 16px;
+    font-weight: 600 !important;
+}
+.qa_nav > :first-child {background: #d3efe0;}
+.qa_nav > :last-child {margin-left: 2%; border-right: 0;}
+.qa_nav > li > .fa {float: right; margin-right: 3rem; line-height: 30px;}
+.qa_nav > li > .fa:hover {color: #666; cursor: pointer;}
+
+.qa_wrap {
+    margin-top: 25px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    word-wrap: break-word;
+    word-break: keep-all;
+    text-align: center;
+    float: left;
+}
+thead {border-top: 1px solid #ccc; border-bottom: 1px solid #f1f1f1;}
+.td_left {text-align: left;}
+.qas thead th, .qas tbody td {
+    padding: 10px 0px;
+}
+.qas tbody tr {border-bottom: 1px solid #f1f1f1;}

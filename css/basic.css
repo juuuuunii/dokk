@@ -1,0 +1,242 @@
+/*************** 초기화 ****************/
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../font/JosefinSans-Bold.eot');
+    src: url('../font/JosefinSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/JosefinSans-Bold.woff2') format('woff2'),
+        url('../font/JosefinSans-Bold.woff') format('woff'),
+        url('../font/JosefinSans-Bold.svg#JosefinSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../font/JosefinSans-Light.eot');
+    src: url('../font/JosefinSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('../font/JosefinSans-Light.woff2') format('woff2'),
+        url('../font/JosefinSans-Light.woff') format('woff'),
+        url('../font/JosefinSans-Light.svg#JosefinSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../font/JosefinSans-Regular.eot');
+    src: url('../font/JosefinSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/JosefinSans-Regular.woff2') format('woff2'),
+        url('../font/JosefinSans-Regular.woff') format('woff'),
+        url('../font/JosefinSans-Regular.svg#JosefinSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/Oswald-LightItalic.eot');
+    src: url('../font/Oswald-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/Oswald-LightItalic.woff2') format('woff2'),
+        url('../font/Oswald-LightItalic.woff') format('woff'),
+        url('../font/Oswald-LightItalic.ttf') format('truetype'),
+        url('../font/Oswald-LightItalic.svg#Oswald-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/Oswald-HeavyItalic.eot');
+    src: url('../font/Oswald-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/Oswald-HeavyItalic.woff2') format('woff2'),
+        url('../font/Oswald-HeavyItalic.woff') format('woff'),
+        url('../font/Oswald-HeavyItalic.ttf') format('truetype'),
+        url('../font/Oswald-HeavyItalic.svg#Oswald-HeavyItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/Oswald-Regular.eot');
+    src: url('../font/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Oswald-Regular.woff2') format('woff2'),
+        url('../fontOswald-Regular.woff') format('woff'),
+        url('../font/Oswald-Regular.ttf') format('truetype'),
+        url('../font/Oswald-Regular.svg#Oswald-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/Oswald-MediumItalic.eot');
+    src: url('../font/Oswald-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/Oswald-MediumItalic.woff2') format('woff2'),
+        url('../font/Oswald-MediumItalic.woff') format('woff'),
+        url('../font/Oswald-MediumItalic.ttf') format('truetype'),
+        url('../font/Oswald-MediumItalic.svg#Oswald-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fontOswald-Demi-BoldItalic.eot');
+    src: url('../font/Oswald-Demi-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/Oswald-Demi-BoldItalic.woff2') format('woff2'),
+        url('../font/Oswald-Demi-BoldItalic.woff') format('woff'),
+        url('../font/Oswald-Demi-BoldItalic.ttf') format('truetype'),
+        url('../font/Oswald-Demi-BoldItalic.svg#Oswald-Demi-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/Oswald-Medium.eot');
+    src: url('../font/Oswald-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../font/Oswald-Medium.woff2') format('woff2'),
+        url('../font/Oswald-Medium.woff') format('woff'),
+        url('../font/Oswald-Medium.ttf') format('truetype'),
+        url('../font/Oswald-Medium.svg#Oswald-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/Oswald-ExtraLight.eot');
+    src: url('../font/Oswald-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../font/Oswald-ExtraLight.woff2') format('woff2'),
+        url('../font/Oswald-ExtraLight.woff') format('woff'),
+        url('../font/Oswald-ExtraLight.ttf') format('truetype'),
+        url('../font/Oswald-ExtraLight.svg#Oswald-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/Oswald-Light.eot');
+    src: url('../font/Oswald-Light.eot?#iefix') format('embedded-opentype'),
+        url('../font/Oswald-Light.woff2') format('woff2'),
+        url('../font/Oswald-Light.woff') format('woff'),
+        url('../font/Oswald-Light.ttf') format('truetype'),
+        url('../font/Oswald-Light.svg#Oswald-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/Oswald-Heavy.eot');
+    src: url('../font/Oswald-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../font/Oswald-Heavy.woff2') format('woff2'),
+        url('../font/Oswald-Heavy.woff') format('woff'),
+        url('../font/Oswald-Heavy.ttf') format('truetype'),
+        url('../font/Oswald-Heavy.svg#Oswald-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/Oswald-DemiBold.eot');
+    src: url('../font/Oswald-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Oswald-DemiBold.woff2') format('woff2'),
+        url('../font/Oswald-DemiBold.woff') format('woff'),
+        url('../font/Oswald-DemiBold.ttf') format('truetype'),
+        url('../font/Oswald-DemiBold.svg#Oswald-DemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/Oswald-RegularItalic.eot');
+    src: url('../font/Oswald-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/Oswald-RegularItalic.woff2') format('woff2'),
+        url('../font/Oswald-RegularItalic.woff') format('woff'),
+        url('../font/Oswald-RegularItalic.ttf') format('truetype'),
+        url('../font/Oswald-RegularItalic.svg#Oswald-RegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/Oswald-Extra-LightItalic.eot');
+    src: url('../font/Oswald-Extra-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/Oswald-Extra-LightItalic.woff2') format('woff2'),
+        url('../font/Oswald-Extra-LightItalic.woff') format('woff'),
+        url('../font/Oswald-Extra-LightItalic.ttf') format('truetype'),
+        url('../font/Oswald-Extra-LightItalic.svg#Oswald-Extra-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Oswald Stencil';
+    src: url('../font/OswaldStencil-Bold.eot');
+    src: url('../font/OswaldStencil-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/OswaldStencil-Bold.woff2') format('woff2'),
+        url('../font/OswaldStencil-Bold.woff') format('woff'),
+        url('../font/OswaldStencil-Bold.ttf') format('truetype'),
+        url('../font/OswaldStencil-Bold.svg#OswaldStencil-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/Oswald-Bold.eot');
+    src: url('../font/Oswald-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Oswald-Bold.woff2') format('woff2'),
+        url('../font/Oswald-Bold.woff') format('woff'),
+        url('../font/Oswald-Bold.ttf') format('truetype'),
+        url('../font/Oswald-Bold.svg#Oswald-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/Oswald-BoldItalic.eot');
+    src: url('../font/Oswald-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/Oswald-BoldItalic.woff2') format('woff2'),
+        url('../font/Oswald-BoldItalic.woff') format('woff'),
+        url('../font/Oswald-BoldItalic.ttf') format('truetype'),
+        url('../font/Oswald-BoldItalic.svg#Oswald-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+
+html, body {
+	margin: 0; 
+	padding: 0; 
+    font-size:14px; 
+    font-weight: 400;
+	color:rgb(59, 59, 59); 
+	box-sizing: border-box; 
+	font-family: 'Noto Sans KR', sans-serif;
+	height:100%; 
+	font-weight:300;}
+h1, h2, h3, h4, h5, h6, p, span  {margin: 0 !important; padding: 0 !important; font-weight: 300 !important; font-size:14px;}
+div, ul, li, ol, dl, dd, dt{margin: 0; padding: 0; box-sizing: border-box; list-style: none;}
+table {margin:0; padding:0; border-collapse:collapse;}
+th, td {margin:0; padding:0;}
+a {text-decoration:none; color: inherit;}
+button {background-color: transparent; border: 0;}
+img {vertical-align: middle;}
+
+.clear {clear:both;}
+.clear:after {clear:both; content:""; display: block;}
+.img {width:100%;}
+.eng {font-family: 'Josefin Sans'; font-weight: 500;}
+.wrap {width: 100%; max-width: 1140px; height: auto; margin: 0 auto;}
+.cursor {cursor: pointer;}
+.arrow_down {color: #ccc;}

@@ -1,6 +1,5 @@
 /** aqua **/
-.top-title {background: #079360;}
-.topbar-left > :nth-child(2) {background: #079360;}         
+.topbar-left > :nth-child(1) {border: 1px solid #079360;}         
 
 
 .farm {margin-bottom: 6rem;}

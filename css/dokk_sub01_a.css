@@ -1,6 +1,5 @@
 /** aqua **/
-.top-title {background: #a6e3f5;}
-.topbar-left > :nth-child(3) {background: #a6e3f5;}          
+.topbar-left > :nth-child(2) {border: 1px solid #0745f1;}          
 
 .aqua {margin-bottom: 6rem;}
 .aqua > h3 {color: #0745f1; font-weight: 600 !important; margin: 3rem 0 2rem !important;}

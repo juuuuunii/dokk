@@ -1,3 +1,5 @@
+/** home **/
+.topbar-left > :first-child {background: #c40000; color: #fff;}
 
 /** product list **/
 .sec_wrap {margin: 70px 0;}

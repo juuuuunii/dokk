@@ -1,5 +1,5 @@
 .farm {margin-bottom: 6rem;}
-.farm > h3 {color: #079360; font-weight: 600; margin: 3rem 0 1rem;}
+.farm > h3 {color: #079360; font-weight: 600; margin: 3rem 0 1rem !important;}
 .farm > h3 > img {width: 5%; margin-right: 1rem;}
 .farm_info {margin-bottom: 2rem;}
 

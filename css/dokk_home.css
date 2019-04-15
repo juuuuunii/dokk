@@ -1,19 +1,21 @@
 
-/** product list **/
+/*** product list ***/
 .sec_wrap {margin: 70px 0;}
 .sec_wrap > div {display: inline-block;}
 .sec_left {width: 20%;}
 .sec_left > .sec_tit {position: relative;}
+.sec_left > .sec_tit h2 > span {display: block;}
 .sec_left > .sec_tit h2:after {
     content: '';
     display: block;
-    width: 8px;
-    height: 1px;
+    width: 15px;
+    height: 2px;
     background-color: #666;
     margin: 30px 0 15px;
 }
+.sec_left > .sec_tit p > span {display: block;}
 .sec_right {width: 77%; float: right;}
-.sec_right .sct > li {width: 30%; height: 400px; float: left; padding: 10px 20px; border: 1px solid #e8e8e8; margin-left: 3%; margin-bottom: 3%;}
+.sec_right .sct > li {width: 30%; height: 400px; float: left; padding: 10px 20px; border: 1px solid #e8e8e8; margin: 0 1.5% 3% 1.7%;}
 .sct_txt h4 {margin: 15px 0 !important; font-size: 15px; font-weight: 600 !important;}
 .sct_txt p {font-size: 12px; color: #888;}
 .sct_txt h6 {font-size: 15px; color: #c40000; font-weight: 600 !important; margin-top: 5px !important;}
@@ -42,7 +44,7 @@
     width: 60%;
 }
 .ban_wrap {width: 100%; position: relative;}
-.ban_wrap > div > li {width: 1140px; height: 500px;}
+.ban_wrap > div > li {width: 1140px;}
 .ban_wrap > div > li > img {width: 100%; height: 600px;}
 #banner > .swiper-container > .angle > .fa {font-size: 30px; width: 30px; height: 30px; border-radius: 50px; text-align: center;}
 #banner > .swiper-container > .angle > .fa:hover {animation-name: angAni; animation-duration: 0.5s; animation-fill-mode: forwards; animation-timing-function: ease-out;}
@@ -59,15 +61,17 @@
 
 /*** tomo ***/
 #tomo {width: 100%; height: 650px; background: url("../img/tomolife/tomolife_ban.jpg") center no-repeat; background-size: cover;}
-.tomo_wrap {width: 60%; float: right; padding-top: 70px;}
+.tomo_wrap {width: 60%; height: 100%; float: right; display: table;}
+.tomo_wrap > .inner {display: table-cell; vertical-align: middle;}
 .tomo_wrap .tomo_title {font-size: 22px; font-weight: 600 !important; color: #555555; margin-bottom: 30px;}
 .tomo_wrap .tomo_title > img {max-width: 200px; display: block; margin-top: 10px;}
-.tomo_wrap > h5 {font-weight: 500 !important; color: #555555; margin-bottom: 30px !important;}
-.tomo_wrap > h5 > span {display: block; font-size: 20px; letter-spacing: 1px;}
+.tomo_wrap h5 {font-weight: 500 !important; color: #555555; margin-bottom: 50px !important;}
+.tomo_wrap h5 > span {display: block; font-size: 20px !important; letter-spacing: 1px;}
 .give {font-family: 'Oswald'; font-style: bold; font-size: 30px !important; font-weight: 600 !important; color: #6aae51; letter-spacing: -1px !important; margin-top: 10px !important;}
-.tomo_wrap .tomo_prd > li {display: inline-block; width: 220px; height: auto;}
+
+.tomo_wrap .tomo_prd > li {display: inline-block;}
 .tomo_wrap .tomo_prd > li .tomo_prd {max-width: 200px;}
-.tomo_wrap .tomo_prd > .tomo_plus {font-size: 40px !important; margin-left: 20px;}
+.tomo_wrap .tomo_prd > .tomo_plus {width: 50px; font-size: 40px !important; margin-left: 20px; margin-right: 0;}
 
 /*** best ***/
 .tab_nav {float: right; margin-bottom: 30px;}
@@ -117,3 +121,58 @@
 #majang > .angle > .fa {font-size: 40px;}
 #majang > .swiper-button-next {right: 25% !important;}
 #majang > .swiper-button-prev {left: 25% !important;}
+
+
+@media (max-width: 1340px) {
+
+    /* 배너 */
+    #banner > .swiper-container > .swiper-button-next {right: 11% !important;}
+    #banner > .swiper-container > .swiper-button-prev {left: 10% !important;}
+
+    /* 토모라이프 */
+    #tomo {height: 470px;}
+    .tomo_wrap {width: 70% ;}
+    .tomo_wrap .tomo_title {font-size: 20px; margin-bottom: 20px;}
+    .tomo_wrap .tomo_title > img {max-width: 180px;}
+    .tomo_wrap h5 {font-size: 16px !important; margin-bottom: 35px !important;}
+    .tomo_wrap h5 > span {font-size: 30px !important;}
+    .tomo_wrap .tomo_prd > li {margin-right: 10px;}
+    .tomo_wrap .tomo_prd > li .tomo_prd {max-width: 150px;}
+}
+
+
+@media (max-width: 1200px) {
+    #tomo {background-position-x: -410px;}
+    .tomo_wrap {width: 80%;}
+}
+
+
+@media (max-width: 992px) {
+    #banner {height: 400px;}
+    .ban_wrap > div > li {width: 850px;}
+    
+    /*** product list ***/
+    .sec_wrap > div {display: block; width: 100%;}
+    .sec_left {margin-bottom: 30px;}
+    .sec_left > .sec_tit h2 > span {display: inline;}
+    .sec_left > .sec_tit h2:after {width: 50px;}
+    .sec_right {float: none;}
+    .sec_right .sct > li {height: 350px; padding: 10px;}
+
+
+    #tomo {background-position: right;}
+    .tomo_wrap {width: 100%;}
+    .tomo_wrap > .inner {padding-left: 50px;}
+    .tomo_wrap .tomo_prd > li {width: 150px;}
+    .tomo_wrap .tomo_prd > li .tomo_prd {max-width: 150px;}
+    
+}
+
+@media (max-width: 768px) {
+   
+}
+
+@media (max-width: 479px) {
+}
+
+

@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>도깨비 방망이</title>
+    <title>행복뚝딱 도깨비몰</title>
     <!-- css -->
     <link rel="stylesheet" href="../css/basic.css">
     <link rel="stylesheet" href="../css/dokk_basic.css">
     <link rel="stylesheet" href="../css/dokk_home.css">
+    <link rel="stylesheet" href="../css/mobile_shop.css">
+    <link rel="stylesheet" href="../css/mobile_skin_basic.css">
+    <link rel="stylesheet" href="../css/outlogin_shop_basic.css">
     <link rel="stylesheet" href="../css/swiper.css">
+    
     
     <!-- w3 -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -73,12 +77,16 @@
                             <span class="w3-badge">0</span>
                         </a>
                     </div>
+                    <div id="hd_btn">
+                        <button type="button" id="btn_hdcate"><i class="fa fa-bars" aria-hidden="true"></i><span class="sound_only">분류</span></button>
+                   </div>
                 </li>
             </ul>
         </div>
+        <!-- web gnb 시작-->
         <div class="top-nav">
-            <div class="wrap">
-                <ul id="gnb" class="gnb clear">
+            <div class="wrap">    
+                <ul id="gnb" class="web_gnb clear">
                     <li>
                         <a href="#none">
                             <i class="fa fa-bars"></i>
@@ -120,42 +128,369 @@
                             <li class="gnb_1dli" style="z-index:995">
                                 <a href="/shop/list.php?ca_id=20" class="gnb_1da gnb_1dam">뷰티</a>
                                 <ul class="gnb_2dul" style="z-index:995">                
-                                    <li class="gnb_2dli"><a href="/shop/list.php?ca_id=5010" class="gnb_2da"></a></li>
+                                    <li class="gnb_2dlgnb_2dai"><a href="/shop/item.php?it_id=1554875550" class="gnb_2da">레이져 진동크림</a></li>
+                                    <li class="gnb_2dlgnb_2dai"><a href="/shop/search.php?q=스트레이트너" class="gnb_2da">스트레이트너</a></li>
+                                    <li class="gnb_2dlgnb_2dai"><a href="/shop/item.php?it_id=1552649224" class="gnb_2da">LED 바람 거울</a></li>
+                                    <li class="gnb_2dlgnb_2dai"><a href="/shop/search.php?q=드라이기" class="gnb_2da">헤어 드라이기</a></li>
+                                    <li class="gnb_2dlgnb_2dai"><a href="/shop/search.php?q=마스크팩" class="gnb_2da">마스크팩</a></li>
+                                    <li class="gnb_2dlgnb_2dai"><a href="/shop/search.php?q=제거기" class="gnb_2da">제거기</a></li>
                                 </ul>        
                             </li>
                             <li class="gnb_1dli" style="z-index:995">
                                 <a href="/shop/list.php?ca_id=30" class="gnb_1da gnb_1dam">패션</a>
                                 <ul class="gnb_2dul" style="z-index:995">                
-                                    <li class="gnb_2dli"><a href="/shop/list.php?ca_id=5010" class="gnb_2da"></a></li>
+                                    <li class="gnb_2dlgnb_2dai"><a href="/shop/item.php?it_id=1554798230" class="gnb_2da">덧신 양말</a></li>
+                                    <li class="gnb_2dlgnb_2dai"><a href="/shop/item.php?it_id=1553182560" class="gnb_2da">털실 실내화</a></li>
+                                    <li class="gnb_2dlgnb_2dai"><a href="/shop/item.php?it_id=1547898341" class="gnb_2da">여행가방</a></li>
+                                    <li class="gnb_2dlgnb_2dai"><a href="/shop/item.php?it_id=1547897567" class="gnb_2da">터치 니트 장갑</a></li>
+                                    <li class="gnb_2dlgnb_2dai"><a href="/shop/item.php?it_id=1546841891" class="gnb_2da">핸즈프리 슬링백</a></li>
                                 </ul>        
                             </li>
                             <li class="gnb_1dli" style="z-index:998">
-                                <a href="/shop/list.php?ca_id=90" class="gnb_1da gnb_1dam">식품</a>
+                                <a href="/shop/list.php?ca_id=90" class="gnb_1da gnb_1dam">식품 </a>
                                 <ul class="gnb_2dul" style="z-index:998">                
-                                    <li class="gnb_2dli"><a href="/shop/list.php?ca_id=2010" class="gnb_2da"></a></li>
+                                    <li class="gnb_2dli"><a href="/shop/item.php?it_id=1552561191" class="gnb_2da">부산어묵</a></li>
                                 </ul>        
                             </li>
                             <li class="gnb_1dli" style="z-index:995">
                                 <a href="/shop/list.php?ca_id=40" class="gnb_1da gnb_1dam">악세사리</a>
                                 <ul class="gnb_2dul" style="z-index:995">                
-                                    <li class="gnb_2dli"><a href="/shop/list.php?ca_id=5010" class="gnb_2da"></a></li>
+                                    <li class="gnb_2dli"><a href="/shop/item.php?it_id=1546843287" class="gnb_2da">스마트폰 차량 거치대</a></li>
                                 </ul>        
                             </li>
                             <li class="gnb_1dli" style="z-index:995">
-                                <a href="/shop/list.php?ca_id=80" class="gnb_1da gnb_1dam">건강/의료</a>
+                                <a href="/shop/list.php?ca_id=80" class="gnb_1da gnb_1dam">건강</a>
                                 <ul class="gnb_2dul" style="z-index:995">                
-                                    <li class="gnb_2dli"><a href="/shop/list.php?ca_id=5010" class="gnb_2da"></a></li>
+                                    <li class="gnb_2dli"><a href="/shop/search.php?q=안마기" class="gnb_2da">안마기</a></li>
+                                    <li class="gnb_2dli"><a href="/shop/search.php?q=마사지기" class="gnb_2da">마사지기</a></li>
+                                    <li class="gnb_2dli"><a href="/shop/item.php?it_id=1552549081" class="gnb_2da">돌찜질기</a></li>
                                 </ul>        
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#none">인기상품</a></li>
-                    <li><a href="#none">최신상품</a></li>
-                    <li><a href="#none">할인상품</a></li>
-                    <li><a href="#none">쿠폰존</a></li>
+                    <li><a href="http://dokk.kr/shop/listtype.php?type=1">히트상품</a></li>
+                    <li><a href="http://dokk.kr/shop/listtype.php?type=2">추천상품</a></li>
+                    <li><a href="http://dokk.kr/shop/listtype.php?type=3">최신상품</a></li>
+                    <li><a href="http://dokk.kr/shop/listtype.php?type=4">인기상품</a></li>
+                    <li><a href="http://dokk.kr/shop/listtype.php?type=5">할인상품</a></li>
                 </ul>
             </div>
         </div>
+        <!-- web gnb 끝-->
+
+         <!--mobile gnb 시작-->
+        <div id="category" class="menu">
+                <button type="button" class="menu_close"><i class="fa fa-times" aria-hidden="true"></i><span class="sound_only">카테고리닫기</span></button>
+                <div class="cate_bg"></div>
+
+                <!--menu_wr 시작-->
+                <div class="menu_wr">
+                    
+                    <aside id="ol_before" class="ol">
+                        <h2>회원로그인</h2>
+                        <!-- 로그인 전 외부로그인 시작 -->
+                        <form name="foutlogin" action="http://dokk.kr/bbs/login_check.php" onsubmit="return fhead_submit(this);" method="post" autocomplete="off">
+                            <fieldset>
+                                <input type="hidden" name="url" value="%2Fshop%2Fitem.php%3Fit_id%3D1547898341%26device%3Dmobile">
+                                <input type="text" name="mb_id" id="ol_id" placeholder="아이디" required maxlength="20">
+                                <input type="password" id="ol_pw" name="mb_password" placeholder="비밀번호" required  maxlength="20">
+                                <div id="ol_svc">
+                                    <input type="checkbox" id="auto_login" name="auto_login" value="1">
+                                    <label for="auto_login" id="auto_login_label">자동로그인</label>
+                                </div>
+                                <input type="submit" id="ol_submit" value="로그인" class="btn_submit">
+
+                            </fieldset>
+                        </form>
+                    </aside>
+
+                    <script>
+                    $("#auto_login").click(function(){
+                        if (this.checked) {
+                            this.checked = confirm("자동로그인을 사용하시면 다음부터 회원아이디와 비밀번호를 입력하실 필요가 없습니다.\n\n공공장소에서는 개인정보가 유출될 수 있으니 사용을 자제하여 주십시오.\n\n자동로그인을 사용하시겠습니까?");
+                        }
+                    });
+
+                    function fhead_submit(f)
+                    {
+                        return true;
+                    }
+                    </script>
+                    <!-- 로그인 전 외부로그인 끝 -->
+                        
+                    <form name="frmsearch1" action="http://dokk.kr/shop/search.php" onsubmit="return search_submit(this);">
+                        <aside id="hd_sch">
+                            <div class="sch_inner">
+                                <h2>상품 검색</h2>
+                                <label for="sch_str" class="sound_only">상품명<strong class="sound_only"> 필수</strong></label>
+                                <input type="text" name="q" value="" id="sch_str" required class="frm_input" placeholder="검색어를 입력해주세요">
+                                <button type="submit" value="검색" class="sch_submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </div>
+                        </aside>
+                    </form>
+                    <script>
+                    function search_submit(f) {
+                        if (f.q.value.length < 2) {
+                            alert("검색어는 두글자 이상 입력하십시오.");
+                            f.q.select();
+                            f.q.focus();
+                            return false;
+                        }
+
+                        return true;
+                    }
+
+                    </script>
+
+                    <ul class="cate_tab">
+                        <li><a href="#cate_01" class="selected">카테고리</a></li>
+                        <li><a href="#cate_02">마이페이지</a></li>
+                        <li><a href="#cate_03">오늘본상품</a></li>
+                    </ul>
+                    <ul class="content">
+                        <!-- cate_01 시작 -->
+                        <li id="cate_01"  class="con">
+                            <ul class="cate">
+                                <li>
+                                    <a href="http://dokk.kr/shop/list.php?ca_id=15">주방</a>
+                                    <button class="sub_ct_toggle ct_op">주방 하위분류 열기</button>
+                                    <ul class="sub_cate sub_cate1">
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=1514">냄비/프라이팬/멀티쿠커</a></li>
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=1524">믹서기/블랜더/다지기</a></li>
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=1534">칼/도마/수저/양식기</a></li>
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=1544">컵/식기/용기</a></li>
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=1554">에어프라이어/토스터기</a></li>
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=1564">보관/밀폐용기</a></li>
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=1574">전기포트/보온포트</a></li>
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=1584">정수기/음용수기</a></li>
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=1594">조리기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="http://dokk.kr/shop/list.php?ca_id=20">뷰티</a>
+                                    <button class="sub_ct_toggle ct_op">뷰티 하위분류 열기</button>
+                                    <ul class="sub_cate sub_cate1">
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=2010">마스크팩</a></li>
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=2020">피부관리기기</a></li>
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=2030">미용가전</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="http://dokk.kr/shop/list.php?ca_id=30">패션</a>
+                                    <button class="sub_ct_toggle ct_op">패션 하위분류 열기</button>
+                                    <ul class="sub_cate sub_cate1">
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=3010">가방/파우치</a></li>
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=3020">장갑</a></li>
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=3030">신발</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="http://dokk.kr/shop/list.php?ca_id=40">악세사리</a>
+                                    <button class="sub_ct_toggle ct_op">악세사리 하위분류 열기</button>
+                                    <ul class="sub_cate sub_cate1">
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=4010">스마트폰 거치대</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="http://dokk.kr/shop/list.php?ca_id=70">생활</a>
+                                    <button class="sub_ct_toggle ct_op">생활 하위분류 열기</button>
+                                    <ul class="sub_cate sub_cate1">
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=7010">침구/커튼</a></li>
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=7020">가습기/제습기</a></li>
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=7030">청소기</a></li>
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=7050">스팀/다리미</a></li>
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=7060">커피머신/용품</a></li>
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=7070">조명기구</a></li>
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=7080">공기청정기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="http://dokk.kr/shop/list.php?ca_id=80">건강/의료</a>
+                                    <button class="sub_ct_toggle ct_op">건강/의료 하위분류 열기</button>
+                                    <ul class="sub_cate sub_cate1">
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=8010">찜질기</a></li>
+                                            <li><a href="http://dokk.kr/shop/list.php?ca_id=8020">안마기</a></li>
+                                            <li><a href="http://dokk.kr/shop/list.php?ca_id=8030">건강측정계</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="http://dokk.kr/shop/list.php?ca_id=90">식품</a>
+                                    <button class="sub_ct_toggle ct_op">식품 하위분류 열기</button>
+                                    <ul class="sub_cate sub_cate1">
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=9010">어묵류</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="http://dokk.kr/shop/list.php?ca_id=a0">컴퓨터</a>
+                                    <button class="sub_ct_toggle ct_op">컴퓨터 하위분류 열기</button>
+                                    <ul class="sub_cate sub_cate1">
+                                        <li><a href="http://dokk.kr/shop/list.php?ca_id=a010">주변기기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="http://dokk.kr/shop/list.php?ca_id=b0">토모라이프</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- cate_01 끝 -->
+
+                        <!-- cate_02 시작 -->
+                        <li id="cate_02" class="con">
+                            <ul id="hd_tnb" class="cate">
+                                <li class="bd"><a href="http://dokk.kr/shop/mypage.php">마이페이지</a></li>
+                                <li class="bd"><a href="http://dokk.kr/shop/orderinquiry.php">주문내역</a></li>
+                                <li class="bd"><a href="http://dokk.kr/shop/couponzone.php">쿠폰존</a></li>
+                                <li class="bd"><a href="http://dokk.kr/bbs/faq.php">FAQ</a></li>
+                                <li><a href="http://dokk.kr/bbs/qalist.php">1:1문의</a></li>
+                                <li><a href="http://dokk.kr/shop/personalpay.php">개인결제</a></li>
+                                <li><a href="http://dokk.kr/shop/listtype.php?type=5">세일상품</a></li>
+                            </ul> 
+                        </li>
+                        <!-- cate_02 끝 -->
+
+                        <!-- cate_03 시작 -->
+                        <li id="cate_03" class="con">
+                            <!-- 오늘 본 상품 시작 { -->
+                            <div id="stv" class="op_area">
+                                <h2>오늘 본 상품</h2>
+                                <ul id="stv_ul">
+                                    <li class="stv_item c1">
+                                        <div class="prd_img"><a href="http://dokk.kr/shop/item.php?it_id=1547898341">
+                                            <img src="http://dokk.kr/data/item/1547898341/thumb-500500_100x100.jpg" width="100" height="100" alt="더블 지퍼 이너백 여행가방">
+                                        </a></div>
+                                    </li>
+                                    <li class="stv_item c1">
+                                        <div class="prd_img"><a href="http://dokk.kr/shop/item.php?it_id=1553492395">
+                                            <img src="http://dokk.kr/data/item/1553492395/thumb-option_img_0fe43_100x100.jpg" width="100" height="100" alt="[베르사체1969] Milano Bella (Q)(블루)이불 / 베개커버 2개포함">
+                                        </a></div>
+                                    </li>
+                                    <li class="stv_item c1">
+                                        <div class="prd_img"><a href="http://dokk.kr/shop/item.php?it_id=1553492536">
+                                            <img src="http://dokk.kr/data/item/1553492536/thumb-option_img_994f4_100x100.jpg" width="100" height="100" alt="[베르사체1969] Milano Bella (Q)(그레이)이불 / 베개커버 2개포함">
+                                        </a></div>
+                                    </li>
+                                </ul>
+                                <div id="stv_btn"></div>
+                                <span id="stv_pg"></span>
+
+                                <script>
+                                $(function() {
+                                    var itemQty = 3; // 총 아이템 수량
+                                    var itemShow = 6; // 한번에 보여줄 아이템 수량
+                                    if (itemQty > itemShow)
+                                    {
+                                        $('#stv_btn').append('<button type="button" id="up"><i class="fa fa-angle-left" aria-hidden="true"></i> 이전</button><button type="button" id="down">다음 <i class="fa fa-angle-right" aria-hidden="true"></i></button>');
+                                    }
+                                    var Flag = 1; // 페이지
+                                    var EOFlag = parseInt(3/itemShow); // 전체 리스트를 3(한 번에 보여줄 값)으로 나눠 페이지 최댓값을 구하고
+                                    var itemRest = parseInt(3%itemShow); // 나머지 값을 구한 후
+                                    if (itemRest > 0) // 나머지 값이 있다면
+                                    {
+                                        EOFlag++; // 페이지 최댓값을 1 증가시킨다.
+                                    }
+                                    $('.c'+Flag).css('display','block');
+                                    $('#stv_pg').text(Flag+'/'+EOFlag); // 페이지 초기 출력값
+                                    $('#up').click(function() {
+                                        if (Flag == 1)
+                                        {
+                                            alert('목록의 처음입니다.');
+                                        } else {
+                                            Flag--;
+                                            $('.c'+Flag).css('display','block');
+                                            $('.c'+(Flag+1)).css('display','none');
+                                        }
+                                        $('#stv_pg').text(Flag+'/'+EOFlag); // 페이지 값 재설정
+                                    })
+                                    $('#down').click(function() {
+                                        if (Flag == EOFlag)
+                                        {
+                                            alert('더 이상 목록이 없습니다.');
+                                        } else {
+                                            Flag++;
+                                            $('.c'+Flag).css('display','block');
+                                            $('.c'+(Flag-1)).css('display','none');
+                                        }
+                                        $('#stv_pg').text(Flag+'/'+EOFlag); // 페이지 값 재설정
+                                    });
+                                });
+                                </script>
+                            </div>
+                            <script src="http://dokk.kr/js/scroll_oldie.js"></script>
+                            <!-- } 오늘 본 상품 끝 -->
+                        </li>
+                    </ul>
+                </div>
+                <!--menu_wr 끝-->
+        </div>
+        <script>
+        $(function (){
+
+            $("button.sub_ct_toggle").on("click", function() {
+                var $this = $(this);
+                $sub_ul = $(this).closest("li").children("ul.sub_cate");
+
+                if($sub_ul.size() > 0) {
+                    var txt = $this.text();
+
+                    if($sub_ul.is(":visible")) {
+                        txt = txt.replace(/닫기$/, "열기");
+                        $this
+                            .removeClass("ct_cl")
+                            .text(txt);
+                    } else {
+                        txt = txt.replace(/열기$/, "닫기");
+                        $this
+                            .addClass("ct_cl")
+                            .text(txt);
+                    }
+
+                    $sub_ul.toggle();
+                }
+            });
+
+
+            $(".content li.con").hide();
+            $(".content li.con:first").show();   
+            $(".cate_tab li a").click(function(){
+                $(".cate_tab li a").removeClass("selected");
+                $(this).addClass("selected");
+                $(".content li.con").hide();
+                //$($(this).attr("href")).show();
+                $($(this).attr("href")).fadeIn();
+            });
+            
+        });
+        </script>
+
+
+        <script>
+        $( document ).ready( function() {
+            var jbOffset = $( '#hd_wr' ).offset();
+            $( window ).scroll( function() {
+                if ( $( document ).scrollTop() > jbOffset.top ) {
+                    $( '#hd_wr' ).addClass( 'fixed' );
+                }
+                else {
+                    $( '#hd_wr' ).removeClass( 'fixed' );
+                }
+            });
+        });
+
+        $("#btn_hdcate").on("click", function() {
+            $("#category").show();
+        });
+
+        $(".menu_close").on("click", function() {
+            $(".menu").hide();
+        });
+        $(".cate_bg").on("click", function() {
+            $(".menu").hide();
+        });
+        </script>
+        <!--mobile gnb 끝-->
+        </div>
+
+        
     </header>
 
     <div id="home">
@@ -187,13 +522,14 @@
                     <div class="sec_left">
                         <div class="sec_tit">
                             <h2>
-                                <strong>SALE</strong> </br>
-                                PRODUCTS
+                                <span><b>SALE</b></span>
+                                <span>PRODUCTS</span>
                             </h2>
                             <p>
-                                도깨비몰만의 특가! </br>
-                                망설임은 배송만 늦출 뿐~
+                                <span>도깨비몰만의 특가!</span>
+                                <span>망설임은 배송만 늦출 뿐~</span>
                             </p>
+
                         </div>
                     </div>
                     <div class="sec_right">
@@ -205,7 +541,7 @@
                                         <h4>
                                            BSW 와플메이커
                                         </h4>
-                                        <p>주반</p>
+                                        <p>주방</p>
                                         <h6>24,000원</h6>
                                     </div>
                                 </a>
@@ -242,19 +578,19 @@
                                             퀸메이드 이지 케어 침구청소기
                                         </h4>
                                         <p>생활</p>
-                                        <h6>129,000원</h6>
+                                        <h6>59,000원</h6>
                                     </div>
                                 </a>
                             </li>
                             <li class="sct_li">
-                                <a href="http://dokk.kr/shop/item.php?it_id=1552644757">
-                                    <div class="sct_img"><img src="../img/sale/94_알렌토LED체중계 JSK18003_배너.jpg" class="img" alt="sale_prd"></div>
+                                <a href="http://dokk.kr/shop/item.php?it_id=1554301369">
+                                    <div class="sct_img"><img src="../img/sale/크라운포드-바바라_배너.jpg" class="img" alt="sale_prd"></div>
                                     <div class="sct_txt">
                                         <h4>
-                                            알렌토 LED 체중계
+                                            크라운포드 바바라 홈세트 14p
                                         </h4>
-                                        <p>건강/의료</p>
-                                        <h6>20,000원</h6>
+                                        <p>주방</p>
+                                        <h6>16,900원</h6>
                                     </div>
                                 </a>
                             </li>
@@ -266,7 +602,44 @@
                                             [독일 바이마르] 미니 블렌더
                                         </h4>
                                         <p>생활</p>
-                                        <h6>9,0000원</h6>
+                                        <h6>47,000원</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sct_li">
+                                <a href="http://dokk.kr/shop/item.php?it_id=1554309579">
+                                    <div class="sct_img"><img src="../img/sale/헤르조그 건조기_배너.jpg" class="img" alt="sale_prd"></div>
+                                    <div class="sct_txt">
+                                        <h4>
+                                            독일 헤르조그 6단 식품건조기
+                                        </h4>
+                                        <p>주방</p>
+                                        <h6>75,000원</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sct_li">
+                                <a href="http://dokk.kr/shop/item.php?it_id=1554208215">
+                                    <div class="sct_img"><img src="../img/sale/물빛미 노니 스페셜세트_배너.jpg" class="img" alt="sale_prd"></div>
+                                    <div class="sct_txt">
+                                        <h4>
+                                            [봄맞이 이벤트]<br/>
+                                            2+1 물빛미 노니 마스크팩 노니아이크림 스페셜세트
+                                        </h4>
+                                        <p>뷰티</p>
+                                        <h6>59,000원</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sct_li">
+                                <a href="http://dokk.kr/shop/item.php?it_id=1554208215">
+                                    <div class="sct_img"><img src="../img/sale/스마트 멀티쿠커.jpg" class="img" alt="sale_prd"></div>
+                                    <div class="sct_txt">
+                                        <h4>
+                                            스마트 멀티쿠커
+                                        </h4>
+                                        <p>주방</p>
+                                        <h6>79,000원</h6>
                                     </div>
                                 </a>
                             </li>
@@ -278,23 +651,24 @@
 
         <section id="tomo" onclick="location.href='/shop/list.php?ca_id=b0';">
             <div class="tomo_wrap">
-                <div class="tomo_title">
-                    좋은 제품, 그리고 창조적인 가격!
-                    <img src="../img/tomolife/tomolife_logo.png" class="tomo_logo img" alt="tomolife_logo"/>
+                <div class="inner">
+                    <div class="tomo_title">
+                        좋은 제품, 그리고 창조적인 가격!
+                        <img src="../img/tomolife/tomolife_logo.png" class="tomo_logo img" alt="tomolife_logo"/>
+                    </div>
+                    <h5>
+                        좋은 제품을 만들겠다는 생산철학과 창조적인 가격으로 판매할 수 있는 창의적 힘이 있다면 </br>
+                        우리는 기억을 만들 수 있습니다. 그리고 우리의 미래를 정하는 키워드, 그것을 우리는 이렇게 말합니다.
+                        <span class="give">Give and Give</span>
+                    </h5>
+                    <ul class="tomo_prd clear">
+                        <li><a href="http://dokk.kr/shop/item.php?it_id=1553152165"><img src="../img/tomolife/tooth_powder.jpg" class="tomo_prd" alt="tomolife_prd"/></a></li>
+                        <li><a href="http://dokk.kr/shop/item.php?it_id=1553151905"><img src="../img/tomolife/tooth.jpg" class="tomo_prd" alt="tomolife_prd"/></a></li>
+                        <li><a href="http://dokk.kr/shop/item.php?it_id=1553151164"><img src="../img/tomolife/lacto.jpg" class="tomo_prd" alt="tomolife_prd"/></a></li>
+                        <li><a href="http://dokk.kr/shop/item.php?it_id=1553149080"><img src="../img/tomolife/fiber.jpg" class="tomo_prd" alt="tomolife_prd"/></a></li>
+                        <li class="tomo_plus"><a href="/shop/list.php?ca_id=b0">+</a></li>
+                    </ul>
                 </div>
-                <h5>
-                    좋은 제품을 만들겠다는 생산철학과 창조적인 가격으로 판매할 수 있는 창의적 힘이 있다면 </br>
-                    우리는 기억을 만들 수 있습니다. 그리고 우리의 미래를 정하는 키워드, 그것을 우리는 이렇게 말합니다.
-                    <span class="give">Give and Give</span>
-                </h5>
-                <ul class="tomo_prd clear">
-                    <li><a href="http://dokk.kr/shop/item.php?it_id=1553152165"><img src="../img/tomolife/tooth_powder.jpg" class="tomo_prd" alt="tomolife_prd"/></a></li>
-                    <li><a href="http://dokk.kr/shop/item.php?it_id=1553151905"><img src="../img/tomolife/tooth.jpg" class="tomo_prd" alt="tomolife_prd"/></a></li>
-                    <li><a href="http://dokk.kr/shop/item.php?it_id=1553151164"><img src="../img/tomolife/lacto.jpg" class="tomo_prd" alt="tomolife_prd"/></a></li>
-                    <li><a href=""><img src="../img/tomolife/fiber.jpg" class="tomo_prd" alt="tomolife_prd"/></a></li>
-                    <li><a href="http://dokk.kr/shop/item.php?it_id=1553149080"><img src="../img/tomolife/vita01.jpg" class="tomo_prd" alt="tomolife_prd"/></a></li>
-                    <li class="tomo_plus"><a href="/shop/list.php?ca_id=b0">+</a></li>
-                </ul>
             </div>
         </section>
 
@@ -304,12 +678,12 @@
                     <div class="sec_left">
                         <div class="sec_tit">
                             <h2>
-                                <strong>BEST</strong> </br>
-                                PRODUCTS
+                                <span><b>BEST</b></span>
+                                <span>PRODUCTS</span>
                             </h2>
-                            <p>
-                                여기서 주목!- </br>
-                                카테고리별 인기상품 보고가세요~
+                             <p>
+                                <span>카테고리별 인기상품!</span>
+                                <span>판매수로 입증합니다!!</span>
                             </p>
                         </div>
                     </div>
@@ -574,13 +948,13 @@
         <section id="thumbnail">
             <div class="wrap">
                 <ul class="thum_wrap clear">
-                    <li><a href="http://dokk.kr/shop/item.php?it_id=1552648965">
+                    <li><a href="http://dokk.kr/shop/item.php?it_id=1554875550">
                         <div class="thum_img">
                             <img src="../img/thumbnail/thum04.jpg" class="thum img" alt="cozella"/>
                         </div>
                         <div class="thum_txt">
-                            <h4>'진짜' 마유를 얻는 꿀팁</h4>
-                            <h6>[바라보니] 마유 마스크팩</h6>
+                            <h4>선우코스메 레이져 진동크림</h4>
+                            <h6>[탈렌트화장품] 선우코스메 레이져 진동크림</h6>
                         </div>
                     </a></li>
                     <li><a href="http://dokk.kr/shop/item.php?it_id=1552560394">
@@ -594,20 +968,20 @@
                     </a></li>
                     <li><a href="">
                         <div class="thum_img">
+                            <img src="../img/thumbnail/thum01.jpg" class="thum img" alt="cozella"/>
+                        </div>
+                        <div class="thum_txt">
+                            <h4>모두가 극찬해요! 믿고 사는 아이템</h4>
+                            <h6>[베르사체1969] Milano Bella(Q) 이불</h6>
+                        </div>
+                    </a></li>
+                    <li><a href="">
+                        <div class="thum_img">
                             <img src="../img/thumbnail/thum03.jpg" class="thum img" alt="cozella"/>
                         </div>
                         <div class="thum_txt">
                             <h4>정성가득 푸짐한 부산참식품</h4>
                             <h6>참 부산어묵 4종 세트</h6>
-                        </div>
-                    </a></li>
-                    <li><a href="">
-                        <div class="thum_img">
-                            <img src="../img/thumbnail/thum01.jpg" class="thum img" alt="cozella"/>
-                        </div>
-                        <div class="thum_txt">
-                            <h4>건강한 음식을 쉽고 간편하게</h4>
-                            <h6>[cocozelle] 홈스마트 큐브 믹서기(솔리드)</h6>
                         </div>
                     </a></li>
                 </ul>
@@ -620,13 +994,14 @@
                     <div class="sec_left">
                         <div class="sec_tit">
                             <h2>
-                                <strong>DOKK</strong> </br>
-                                PRODUCTS
+                                <span><b>DOKK</b></span>
+                                <span>PRODUCTS</span>
                             </h2>
                             <p>
-                                지금까지 이런 쇼핑몰은 없었다 </br>
-                                안녕하세요 도깨비몰 입니다!
+                                <span>지금까지 이런 쇼핑몰은 없었다.</span>
+                                <span>안녕하세요 도깨비몰입니다!!</span>
                             </p>
+                            
                         </div>
                     </div>
                     <div class="sec_right">
@@ -638,7 +1013,7 @@
                                         <h4>
                                            크라운포드 이유식 조리기
                                         </h4>
-                                        <p>생활</p>
+                                        <p>주방</p>
                                         <h6>35,000원</h6>
                                     </div>
                                 </a>
@@ -696,10 +1071,10 @@
                                     <div class="sct_img"><img src="../img/dokk/115_ELO ICARUS1.7L전기주전자ELWK1000BKF_배너.jpg" class="img" alt="sale_prd"></div>
                                     <div class="sct_txt">
                                         <h4>
-                                            ELO 1.7L 전기주전자
+                                            ELO ICARUS  1.7L 전기 주전자
                                         </h4>
                                         <p>주방</p>
-                                        <h6>45,0000원</h6>
+                                        <h6>45,000원</h6>
                                     </div>
                                 </a>
                             </li>
@@ -716,14 +1091,14 @@
                                 </a>
                             </li>
                             <li class="sct_li">
-                                <a href="http://dokk.kr/shop/item.php?it_id=1552562992">
-                                    <div class="sct_img"><img src="../img/dokk/168_쿠비녹스제니에어프라이기_배너.jpg" class="img" alt="sale_prd"></div>
+                                <a href="http://dokk.kr/shop/item.php?it_id=1554310746">
+                                    <div class="sct_img"><img src="../img/dokk/디오바코-에어프라이어-2.0L.jpg" class="img" alt="sale_prd"></div>
                                     <div class="sct_txt">
                                         <h4>
-                                            쿠비녹스 제니 에어프라이어
+                                            디오바코 에어프라이어 2.0L
                                         </h4>
                                         <p>주방</p>
-                                        <h6>149,000원</h6>
+                                        <h6>99,000원</h6>
                                     </div>
                                 </a>
                             </li>
@@ -747,7 +1122,7 @@
                                             파벡스 손 멀티 마사지기
                                         </h4>
                                         <p>의료/건강</p>
-                                        <h6>16,8000원</h6>
+                                        <h6>168,000원</h6>
                                     </div>
                                 </a>
                             </li>
@@ -756,10 +1131,10 @@
                                     <div class="sct_img"><img src="../img/dokk/29_솔고-수소캡_배너.jpg" class="img" alt="sale_prd"></div>
                                     <div class="sct_txt">
                                         <h4>
-                                            더 수소수생성 음용수기
+                                            솔고 더수소수 포트형
                                         </h4>
                                         <p>주방</p>
-                                        <h6>360,000원</h6>
+                                        <h6>345,000원</h6>
                                     </div>
                                 </a>
                             </li>
@@ -771,7 +1146,44 @@
                                             VISKA
                                         </h4>
                                         <p>생활</p>
-                                        <h6>19,0000원</h6>
+                                        <h6>3,9000원</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sct_li">
+                                <a href="/shop/item.php?it_id=1554451659">
+                                    <div class="sct_img"><img src="../img/dokk/107.jpg" class="img" alt="sale_prd"></div>
+                                    <div class="sct_txt">
+                                        <h4>
+                                            클레린 티포트 시그니처 플러스
+                                        </h4>
+                                        <p>주방</p>
+                                        <h6>49,000원</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sct_li">
+                                <a href="/shop/item.php?it_id=1552564862">
+                                    <div class="sct_img"><img src="../img/dokk/12.jpg" class="img" alt="sale_prd"></div>
+                                    <div class="sct_txt">
+                                        <h4>
+                                            널리팝 스팀 멀티 오븐 토스터기
+                                        </h4>
+                                        <p>주방</p>
+                                        <h6>110,000원</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sct_li">
+                                <a href="http://dokk.kr/shop/item.php?it_id=1554798230">
+                                    <div class="sct_img"><img src="../img/dokk/페이크삭스(베이지).jpg" class="img" alt="sale_prd"></div>
+                                    <div class="sct_txt">
+                                        <h4>
+                                            [ANB7]남녀페이크삭스덧신양말<br/>
+                                            (베이지)
+                                        </h4>
+                                        <p>생활</p>
+                                        <h6>900원</h6>
                                     </div>
                                 </a>
                             </li>
@@ -782,7 +1194,7 @@
         </section>
 
 
-    </div>
+    </div> 
 
     <footer id="basic" class="wrap clear">
         <ul class="foot_top clear">
@@ -829,6 +1241,25 @@
         </ul>
         
     </footer>
+
+    <div class="side_area">
+        <div class="sns_area">
+            <div class="facebook"><a href="https://www.facebook.com/%EB%8F%84%EA%B9%A8%EB%B9%84%EB%AA%B0-2192639774381592/notifications/" target=_blank>
+                <img src="/img/sns/icon_sns_facebook2.png" class="img" alt="facebook"/>
+            </a></div>
+            <div class="youtube"><a href="https://www.youtube.com/channel/UCJtUIHklatYxvFc0Yj_F9Iw?view_as=subscriber" target=_blank>
+                <img src="/img/sns/icon_sns_youtube.png" class="img" alt="youtube"/>
+            </a></div>
+            <div class="instagram"><a href="https://www.instagram.com/dokkmallcom/" target=_blank>
+                <img src="/img/sns/icon_sns_insta2.png" class="img" alt="instagram"/>
+            </a></div>
+            <div class="blog"><a href="https://blog.naver.com/dokkkr" target=_blank>
+                <img src="/img/sns/icon_sns_blog.png" class="img" alt="blog"/>
+            </a></div>
+        </div>
+    </div>
+  
+  
 
     <script src="../js/swiper.js"></script>
     <script src="../js/dokk_basic.js"></script>

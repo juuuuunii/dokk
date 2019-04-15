@@ -45,7 +45,7 @@
 }
 .ban_wrap {width: 100%; position: relative;}
 .ban_wrap > div > li {width: 1140px;}
-.ban_wrap > div > li > img {width: 100%; height: 600px;}
+.ban_wrap > div > li img {width: 100%; height: 500px;}
 #banner > .swiper-container > .angle > .fa {font-size: 30px; width: 30px; height: 30px; border-radius: 50px; text-align: center;}
 #banner > .swiper-container > .angle > .fa:hover {animation-name: angAni; animation-duration: 0.5s; animation-fill-mode: forwards; animation-timing-function: ease-out;}
 @keyframes angAni {
